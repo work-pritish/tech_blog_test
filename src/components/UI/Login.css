@@ -1,0 +1,131 @@
+.login {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* margin: 2rem; */
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  /* justify-content: space-around; */
+}
+
+.login .login_head {
+  background-color: rgb(32, 148, 138);
+  padding: 1.5rem;
+  line-height: 1;
+  color: rgb(224, 224, 224);
+}
+
+.login .login_head span {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.login .topics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 1;
+  color: rgb(32, 148, 138);
+}
+.login .topics .topic::after {
+  content: "";
+  font-size: 3rem;
+}
+
+.login .topics .topic:not(:last-child)::after {
+  content: ".";
+  align-self: center;
+  margin: 0 1rem;
+}
+
+.login input {
+  display: block;
+  padding: 1rem;
+  margin: 2rem;
+  box-shadow: 0rem 0rem 0.5rem 0rem rgb(224 219 219 / 55%);
+  border: 2px solid rgb(32, 148, 138);
+  background-color: rgb(248, 248, 248);
+  border-radius: 2px;
+  width: 50%;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.login input::placeholder {
+  color: rgb(170, 166, 166);
+  font: inherit;
+}
+
+.login .login_submit {
+  border: none;
+  text-align: right;
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  color: azure;
+  background-color: rgb(32, 148, 138);
+  font-weight: 600;
+  border: 4px solid rgb(248, 248, 248);
+  font-size: 2rem;
+}
+
+.login .login_field {
+  position: relative;
+}
+
+.login label {
+  position: absolute;
+  color: rgb(32, 148, 138);
+  left: 50px;
+  top: -12px;
+  background-color: rgb(248, 248, 248);
+  padding: 0 5px;
+}
+
+.login_content {
+  background-color: rgb(248, 248, 248);
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.login .forgot_password {
+  margin: 2rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgb(32, 148, 138);
+  text-decoration: underline;
+}
+
+.login .or {
+  border-top: 1px solid rgb(178, 173, 173);
+  width: 80%;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -38px;
+}
+
+.login .or span {
+  position: relative;
+  top: -13px;
+  font-size: 1.2rem;
+  background-color: rgb(248, 248, 248);
+  padding: 0 1rem;
+}
+
+.login .login_google {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .login_google img {
+  /* width: 2rem; */
+  width: 50%;
+  cursor: pointer;
+}
