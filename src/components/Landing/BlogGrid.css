@@ -1,8 +1,10 @@
+.featured-area{
+    background: #2d3748;
+}
 .featured-grid-container{
     display: grid;
     width: 95%;
     margin: auto;
-    margin-top: 3%;
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-template-rows: 500px;
 }

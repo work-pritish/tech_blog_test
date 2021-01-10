@@ -1,36 +1,13 @@
-import React, { useState } from 'react'
-import Login from '../UI/Login'
-import Modal from '../UI/Modal'
+import React from 'react'
+
 import './Landing_Top.css'
+import Nav from './Nav'
 
 export default function LandingTop() {
-    const [adminModal, setAdminModal] = useState(false)
-
     return (
         <>
-            {
-                adminModal
-                    ?
-                    <Modal close={() => setAdminModal(false)}>
-                        <Login />
-                    </Modal>
-                    : null
-            }
-
+            <Nav/>
             <div className="top-container">
-                <nav>
-                <input type="checkbox" id="nav_toggle"/>
-                <label htmlFor="nav_toggle" className="nav_label_toggle">
-                    <div className="line"></div>
-                    <div className="line"></div>
-                    <div className="line"></div>
-                </label>
-                    <ul className="link-container">
-                        <li><a href="#" className="nav-links">BLOG</a></li>
-                        <li><a href="#" className="nav-links">CONTACT</a></li>
-                        <li><a href="#" onClick={() => setAdminModal(true)} className="nav-links">ADMIN</a></li>
-                    </ul>
-                </nav>
                 <div className="astro-img">
                 <svg className="astro-svg" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Astronaut">
@@ -290,12 +267,7 @@ export default function LandingTop() {
       </div>
             </div>
             
-            <div className="social-media">
-                <a href="#" className="media-links git"></a>
-                <a href="#" className="media-links fb"></a>
-                <a href="#" className="media-links insta"></a>
-            </div>
-            
+    
             <div className="left-container">
                 <div className="intro">
                     <div className="logo">TECHREX</div>
