@@ -8,6 +8,7 @@ nav{
 }
 .link_container{
     display: flex;
+    margin-left: 3%;
 }
 #nav_toggle{
     display: none;
@@ -45,6 +46,7 @@ nav{
         height: 100vh;
         background: #1b212b;
         transition: all 1s ease;
+        margin-left: 0%;
         
     }
     .nav_links{
