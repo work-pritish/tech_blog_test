@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  background: #2d3748;
   max-height: 1000px;
 }
 
@@ -11,13 +10,15 @@
   height: 100vh;
   width: 55%;
   background: 
-    linear-gradient(black 0%, #2d3748 90%), 
-    linear-gradient(to right, #2d3748 0%, #2d3748 90%), 
-    url('https://static.vecteezy.com/system/resources/previews/000/208/951/original/vector-sci-fi-landscape-illustration.jpg') 30px;
+    linear-gradient(black 0%, #14181f 90%), 
+    linear-gradient(to right, #12161d 0%, #13171f 90%), 
+    url('https://static.vecteezy.com/system/resources/previews/000/208/951/original/vector-sci-fi-landscape-illustration.jpg');
+  
   background-blend-mode: color;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .right-container {
   position: relative;
