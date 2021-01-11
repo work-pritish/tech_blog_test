@@ -21,9 +21,10 @@ nav{
 .nav_links{
     color: white;
     font-size: 1.2rem;
-    margin-left: 15%;
+    margin-left: 5%;
     background: #1b212b;
-    padding: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 .nav_links:hover{

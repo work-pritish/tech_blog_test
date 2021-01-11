@@ -8,8 +8,12 @@ export default function LandingTop() {
         <>
             <Nav/>
             <div className="top-container">
+               
+            
+            <div className="left-container">
+                <div className="intro">
                 <div className="astro-img">
-                <svg className="astro-svg" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="astro-svg" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Astronaut">
                         <g id="astro">
                             <g id="Group">
@@ -74,7 +78,14 @@ export default function LandingTop() {
                         </g>
                     </g>
                 </svg>
+                </div>
+                    <div className="logo">TECHREX</div>
+                    <div className="desc">Tech - Updates - Fun</div>
+                    <div className="get-start-words">Get yourself updated with latest tech updates and news. Enjoy posts containing funny memes</div>
+                    <a href="#" className="lets-go-btn">LET'S GO</a>
+                </div>
             </div>
+            <div className="right-container">
             <div className="rocket">
                 <svg className="rocket-svg" width="400" height="500" viewBox="0 0 400 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Layer 2">
@@ -266,17 +277,6 @@ export default function LandingTop() {
       </svg>
       </div>
             </div>
-            
-    
-            <div className="left-container">
-                <div className="intro">
-                    <div className="logo">TECHREX</div>
-                    <div className="desc">Tech - Updates - Fun</div>
-                    <div className="get-start-words">Get yourself updated with latest tech updates and news. Enjoy posts containing funny memes</div>
-                    <a href="#" className="lets-go-btn">LET'S GO</a>
-                </div>
-            </div>
-            <div className="right-container">
             </div>
         </div>
         </>

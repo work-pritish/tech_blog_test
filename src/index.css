@@ -6,6 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+  max-width: 1920px;
+  margin: auto;
 }
 
 
