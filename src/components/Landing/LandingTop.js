@@ -80,7 +80,7 @@ export default function LandingTop() {
                 </svg>
                 </div>
                     <div className="logo">TECHREX</div>
-                    <div className="desc">Tech - Updates - Fun</div>
+                    <div className="desc">TECH - UPDATES - FUN</div>
                     <div className="get-start-words">Get yourself updated with latest tech updates and news. Enjoy posts containing funny memes</div>
                     <a href="#" className="lets-go-btn">LET'S GO</a>
                 </div>

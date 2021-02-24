@@ -1,4 +1,6 @@
+
 .top-container {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -9,11 +11,7 @@
   position: relative;
   height: 100vh;
   width: 55%;
-  background: 
-    linear-gradient(black 0%, #14181f 90%), 
-    linear-gradient(to right, #12161d 0%, #13171f 90%), 
-    url('https://static.vecteezy.com/system/resources/previews/000/208/951/original/vector-sci-fi-landscape-illustration.jpg');
-  
+  background-color: #2d3748;
   background-blend-mode: color;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,49 +19,51 @@
   
 }
 .right-container {
-  position: relative;
+  position: absolute;
+  left: 48%;
   height: 100vh;
-  width: 45%;
-  background: url("https://static.vecteezy.com/system/resources/previews/000/208/951/original/vector-sci-fi-landscape-illustration.jpg");
-  background-color: #2d3748;
+  width: 52%;
+  background: url("https://i.pinimg.com/originals/ab/f3/12/abf3126883ab6c044179596032c90bae.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
- }
+  clip-path: polygon(13% 26%, 3% 26%, 13% 0, 85% 0%, 100% 0, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 0 100%, 10% 70%, 0 70%);  
+}
 
 .intro {
   height: 505px;
   width: 93%;
   background: #1a202c;
-  position: absolute;
+  position: relative;
   top: 15%;
-  left: 5%;
+  left: 7%;
   color: white;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   box-shadow: -10px 35px 35px 0px rgba(0, 0, 0, 0.603);
 }
 .logo {
-  background: rgb(0, 0, 0);
-  font-size: 3.5rem;
-  margin-top: 40px;
-  margin-left: 30px;
-  padding: 10px;
-  border-radius: 1.5rem;
+  font-family: 'Reggae One', cursive;
+  background: rgb(17, 19, 19);
+  font-size: 3rem;
+  padding: 5px 0px 5px 10px;
+}
+.logo::first-letter{
+  font-size: 5rem;
+  color: rgb(0, 225, 255);
 }
 .desc {
-  font-size: 1.5rem;
-  padding: 10px;
-  margin-left: 3%;
+  font-family: 'Stick', sans-serif;
+  font-size: 1.2rem;
+  padding: 20px;
 }
 .get-start-words {
-  width: 40%;
+  font-family: 'Akaya Telivigala', cursive;
+  width: 55%;
   font-size: 1.7rem;
   margin-top: 5%;
   margin-left: 2%;
   padding: 10px;
   margin-bottom: 20px;
-  font-style: italic;
 }
 .lets-go-btn {
   position: absolute;
@@ -75,6 +75,7 @@
   margin-left: 2%;
   border-radius: 1rem;
   transition: all 0.5s;
+  bottom: 5%;
 }
 .lets-go-btn:hover {
   box-shadow: -10px 15px 15px 0px rgba(0, 0, 0, 0.555);
@@ -86,6 +87,7 @@
 }
 
 .astro-img {
+  z-index: 1;
   position: absolute;
   top: 15%;
   right: 2%;
@@ -187,7 +189,7 @@
   }
 }
 /* tablet styling medias */
-@media (max-width: 770px){
+@media (max-width: 1100px){
   .astro-img{
     display: none;
   }
@@ -198,7 +200,8 @@
     display: none;
   }
   .get-start-words{
-    width: 60%;
+    font-size: 1.5rem;
+    width: 75%;
   }
 }
 
@@ -212,6 +215,7 @@
   }
   .intro{
     top: 10%;
+    left: 3%;
   }
   .get-start-words{
     font-size: 1.3rem;
